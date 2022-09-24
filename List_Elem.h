@@ -13,11 +13,11 @@ public:
 		this->next = this->prev = NULL;
 	}
 	List_element(int info, List_element* next, List_element* prev) {
-		this->info = 0;
+		this->info = info;
 		this->next = next;
 		this->prev = prev;
 	}
-	int GetInfo() {              //functions that extract private members of a class
+	int GetInfo() {
 		return this->info;
 	}
 	List_element* GetNext() {
@@ -30,18 +30,13 @@ public:
 		this->info = info;
 	}
 	void PutNext(List_element* next) {
-		if (this->next == NULL)
-			this->next = new List_element;
 		this->next = next;
 	}
 	void PutPrev(List_element* prev) {
-		if (this->prev == NULL)
-			this->prev = new List_element;
 		this->prev = prev;
 	}
-	void delete_elem();
-	~List_element() {    //destructor
-		cout << "сработал деструктор" << '\n';
-		this->delete_elem();
-	}
 };
+bool Is_empty(List_element* head);
+List_element* add_head(List_element* head, List_element add_element);
+List_element* add_last(List_element* last, List_element add_element);
+

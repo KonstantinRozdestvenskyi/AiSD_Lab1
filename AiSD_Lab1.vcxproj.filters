@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="List_element.h">
+    <ClInclude Include="List_Elem.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="List.h">
@@ -36,6 +36,9 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SetLast.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>

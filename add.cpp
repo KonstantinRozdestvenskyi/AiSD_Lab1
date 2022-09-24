@@ -1,23 +1,13 @@
 #include"List.h"
-void List::add_head(List_element elem) {
-	if (this->is_empty()) {
-		this->head = this->last = &elem;
+List_element* add_head(List_element* head, List_element add_element) {
+	if (Is_empty(head)) {
+		head = &add_element;
 	}
 	else {
-		this->head->PutPrev(&elem);
-		this->head->GetPrev()->PutNext(this->head);
-		this->head = this->head->GetPrev();
-		this->head->PutPrev(NULL);
+		head->PutPrev(&add_element);
+		head->GetPrev()->PutNext(head);
+		head->GetPrev()->PutPrev(NULL);
 	}
+	return head->GetPrev();
 }
-void List::add_last(List_element elem) {
-	if (this->is_empty()) {
-		this->head = this->last = &elem;
-	}
-	else {
-		this->last->PutNext(&elem);
-		this->last->GetNext()->PutPrev(this->last);
-		this->last = this->last->GetNext();
-		this->last->PutNext(NULL);
-	}
-}
+	

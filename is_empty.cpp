@@ -1,4 +1,4 @@
 #include"List.h"
-bool List::is_empty() {
+bool Is_empty(List_element* head) {
 	return head == NULL;
 }

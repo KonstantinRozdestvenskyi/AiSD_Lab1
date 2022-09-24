@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="List.h" />
-    <ClInclude Include="List_element.h" />
+    <ClInclude Include="List_Elem.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="add.cpp" />
@@ -148,6 +148,7 @@
     <ClCompile Include="input.cpp" />
     <ClCompile Include="is_empty.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SetLast.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
