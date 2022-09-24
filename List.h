@@ -23,4 +23,9 @@ public:
 		cout << "сработал деструктор" << '\n';
 		this->delete_List();
 	}
+	bool is_empty();
+	void add_head(List_element elem);
+	void add_last(List_element elem);
+	void add_index(List_element elem, int index);
+	void input_List(fstream& f);
 };

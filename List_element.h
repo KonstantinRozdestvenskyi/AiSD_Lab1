@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+#include<fstream>
 using namespace std;
 class List_element {
 private:
@@ -22,8 +23,21 @@ public:
 	List_element* GetNext() {
 		return this->next;
 	}
-	List_element* GetNext() {
-		return this->next;
+	List_element* GetPrev() {
+		return this->prev;
+	}
+	void PutInfo(int info) {
+		this->info = info;
+	}
+	void PutNext(List_element* next) {
+		if (this->next == NULL)
+			this->next = new List_element;
+		this->next = next;
+	}
+	void PutPrev(List_element* prev) {
+		if (this->prev == NULL)
+			this->prev = new List_element;
+		this->prev = prev;
 	}
 	void delete_elem();
 	~List_element() {    //destructor
