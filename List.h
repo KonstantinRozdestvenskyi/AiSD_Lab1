@@ -19,15 +19,14 @@ public:
 	List_element* GetLast() {
 		return this->last;
 	}
-	void PutHead(List_element head) {
-		this->head = &head;
+	void PutHead(List_element *head) {
+		this->head = head;
 	}
-	void PutLast(List_element last) {
-		this->last = &last;
-		this->head = this->head;
+	void PutLast(List_element *last) {
+		this->last = last;
 	}
+	bool Is_empty();
+	//List_element* SetLast(List_element head);
+	List_element* add_head(List_element* add_element);
+	List_element* add_last(List_element* add_element);
 };
-bool Is_empty(List_element* head);
-List_element* SetLast(List_element head);
-List_element* add_head(List_element* head, List_element add_element);
-List_element* add_last(List_element* last, List_element add_element);
