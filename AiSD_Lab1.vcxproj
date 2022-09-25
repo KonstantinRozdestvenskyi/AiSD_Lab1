@@ -145,10 +145,14 @@
   <ItemGroup>
     <ClCompile Include="add.cpp" />
     <ClCompile Include="delete.cpp" />
+    <ClCompile Include="change_index.cpp" />
+    <ClCompile Include="GetElement.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="is_empty.cpp" />
+    <ClCompile Include="List_length.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="SetLast.cpp" />
+    <ClCompile Include="Output.cpp" />
+    <ClCompile Include="swap.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
